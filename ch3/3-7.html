@@ -1,0 +1,31 @@
+<!--
+    시험문제
+    다음중 중복으로 적용되는 태그는?
+    <small>,<sub>,<sup> 태그이다.
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자모양태그</title>
+</head>
+<body>
+    <p>일반 글자 모양</p>
+    <b>일반 글자 <b>모양</b></b><br><br>
+    <i>일반 글자 모양</i><!-- i태그를 2번했다고 더 기울려지지 않는다.-->
+    <p>일반 글자 모양<small>일반 <small>글자</small> 모양</small></p> 
+    <!--p태그는 문단을 나눈것이라 br태그를 넣지 않아도 엔터가 적용되어져있다.
+    small태그는 중복으로 적용된다.-->
+    <p>일반<sub>글자</sub>모양</p>
+    <p>일반<sup>글자</sup>모양</p>
+    <p>일반<sup>글<sup>자</sup></sup>모양</p>
+    <p>일반<sub><sup>글</sub>자</sup>모양</p>
+    <p>일반<sub>글<sub>자</sub></sub>모양</p>
+    <p>일반 <ins>글자</ins> 모양</p>
+    <p>일반 <del>글자</del> 모양</p>
+
+</body>
+</html>

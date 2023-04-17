@@ -1,0 +1,58 @@
+
+<!--
+    테이블 태그
+    <tabel> - 표 삽입
+    <tr> - 행 삽입
+    <th> - 셀 생성
+    <td> - 일반 셀 생성
+
+
+    중요!! 시험나옴
+    th, td 태그에 사용가능한 속성
+    colspan - 셀 너비 지정 (= 오른쪽 셀 통합)
+    rowspan - 셀 높이 지정 (= 위아래 셀 통합)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표</title>
+</head>
+<body>
+
+    <h1>1학기 시간표</h1>
+    <table border="1">
+        <thead> 
+            <tr>
+                <th></th>
+                <th>월</th> <!-- 진하게 표시됨 , 가운데 정렬-->
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td>영어</td>
+                <td>과학</td>
+                <td colspan="2">기술</td> <!--가로셀 합치기-->
+                <td rowspan="2">미술</td> <!--세로셀 합치기-->
+            </tr>
+
+            <tr>
+                <td>2교시</td>
+                <td>국어</td>
+                <td>기술</td>
+                <td>수학</td>
+                <td>과학</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
